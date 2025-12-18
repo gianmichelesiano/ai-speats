@@ -110,7 +110,7 @@ This project uses no build tools, package managers, or compilation steps. All fi
 - The site is fully functional without JavaScript, but enhanced with progressive enhancement
 - All translations are maintained in the large `translations` object in `script.js`
 - Contact information and business details are hardcoded throughout
-- BrokerAI is an external application linked at `https://brokerai.speats.ch/`
+- BrokerAI is an external application linked at `https://dashboard.speats.ch/`
 - The site uses Font Awesome icons loaded from CDN
 
 ## Common Tasks
