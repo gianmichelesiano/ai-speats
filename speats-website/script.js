@@ -79,7 +79,7 @@ const translations = {
       'get_started': 'Get Started',
       
       // Hero section
-      'hero_title': 'Custom AI Agents That Automate Your Business Operations;',
+      'hero_title': 'Custom AI Agents That Automate Your Business Operations.',
       'hero_description': 'From WhatsApp chatbots to lead automation and customer support - we create personalized AI agents that work 24/7 for your business. Join companies saving up to 50% on operational costs.',
       'explore_solutions': 'Request Free Demo',
       'view_demo': 'View Live Demo',
