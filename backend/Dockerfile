@@ -41,4 +41,5 @@ COPY ./tests /app/tests
 RUN --mount=type=cache,target=/root/.cache/uv \
     uv sync
 
-CMD ["fastapi", "run", "--workers", "4", "app/main.py"]
+# Run prestart script (migrations + initial data) then start the server
+CMD ["bash", "-c", "./scripts/prestart.sh && fastapi run --workers 4 app/main.py"]
