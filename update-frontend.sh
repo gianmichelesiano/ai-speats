@@ -6,7 +6,9 @@ git pull
 docker compose stop backend
 # Build del frontend
 docker compose build frontend
-# Riavvia tutti i servizi
-docker compose up -d
+# Riavvia il frontend
+docker compose up -d --no-deps frontend
+# Riavvia il backend
+docker compose start backend
 echo "Frontend aggiornato!"
 docker compose ps frontend
