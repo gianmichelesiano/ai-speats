@@ -1,0 +1,23 @@
+name: Deploy to Linode
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+      
+      - name: Deploy to Linode
+        env:
+          SSH_PASS: ${{ secrets.SSH_PASSWORD }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "StrictHostKeyChecking no" > ~/.ssh/config
+          sshpass -p "$SSH_PASS" rsync -avz --delete ./ root@172.232.218.152:/var/www/speats.ch/

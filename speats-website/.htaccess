@@ -1,0 +1,77 @@
+# Abilita la compressione GZIP
+<IfModule mod_deflate.c>
+  # Attiva la compressione per i tipi di file più comuni
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json application/xml application/rss+xml application/atom+xml application/vnd.ms-fontobject application/x-font-ttf font/opentype image/svg+xml
+
+  # Livello di compressione (1-9, dove 9 è la massima compressione)
+  DeflateCompressionLevel 9
+  
+  # Esclude browser problematici
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+
+# Abilita la cache del browser
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # Imposta la cache predefinita a 1 mese
+  ExpiresDefault "access plus 1 month"
+  
+  # HTML
+  ExpiresByType text/html "access plus 1 week"
+  
+  # CSS e JavaScript
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  
+  # Immagini
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  
+  # Fonts
+  ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+  ExpiresByType application/x-font-ttf "access plus 1 year"
+  ExpiresByType application/x-font-opentype "access plus 1 year"
+  ExpiresByType application/x-font-woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# Aggiunge header di cache per i browser che non supportano mod_expires
+<IfModule mod_headers.c>
+  # 1 ANNO
+  <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|webp|gif|js|css|swf|svg|woff|woff2|ttf|eot)$">
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
+  
+  # 1 SETTIMANA
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "max-age=604800, public"
+  </FilesMatch>
+  
+  # NESSUNA CACHE
+  <FilesMatch "\.(php)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# Rimuovi ETag (evita problemi di cache con server multipli)
+FileETag None
+
+# Proteggi file sensibili
+<FilesMatch "^\.ht">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Abilita CORS per le risorse statiche
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css|css|js)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>

@@ -1,6 +1,31 @@
+# IDE
 .vscode
+.idea
+
+# Dependencies
 node_modules/
+
+# Test
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# Environment files (IMPORTANTE: non pushare secrets!)
+.env
+.env.local
+.env.*.local
+z_notes.txt
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Docker
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

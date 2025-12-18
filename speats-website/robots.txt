@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.speats.ch/sitemap.xml
+
+# Disallow crawling of admin areas
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /login/
