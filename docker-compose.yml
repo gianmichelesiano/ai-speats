@@ -97,8 +97,27 @@ services:
     networks:
       - ai-speats-network
 
+  n8n:
+    image: n8nio/n8n
+    restart: always
+    ports:
+      - "5678:5678"  # Accessibile via Nginx su n8n.speats.ch
+    environment:
+      - N8N_HOST=n8n.speats.ch
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=https
+      - WEBHOOK_URL=https://n8n.speats.ch/
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=${N8N_BASIC_AUTH_USER:-admin}
+      - N8N_BASIC_AUTH_PASSWORD=${N8N_BASIC_AUTH_PASSWORD:-changeme}
+    volumes:
+      - n8n_data:/home/node/.n8n
+    networks:
+      - ai-speats-network
+
 volumes:
   app-db-data:
+  n8n_data:
 
 networks:
   ai-speats-network:
