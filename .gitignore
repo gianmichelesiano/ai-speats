@@ -29,3 +29,10 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+# Update scripts (local deployment)
+update-*.sh
+
+# Start scripts (local development)
+backend-start.sh
+frontend-start.sh

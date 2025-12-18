@@ -75,6 +75,11 @@ export const translations = {
         subtitle: "Demo & Preview",
         description: "Explore all available UI components",
       },
+      "crud-example": {
+        title: "CRUD Example",
+        subtitle: "Items Management",
+        description: "Complete CRUD example with items management",
+      },
     },
 
     // Chat
@@ -197,6 +202,11 @@ export const translations = {
         subtitle: "Demo & Vorschau",
         description: "Alle verfügbaren UI-Komponenten erkunden",
       },
+      "crud-example": {
+        title: "CRUD-Beispiel",
+        subtitle: "Elementverwaltung",
+        description: "Vollständiges CRUD-Beispiel mit Elementverwaltung",
+      },
     },
 
     // Chat
@@ -318,6 +328,11 @@ export const translations = {
         title: "Componenti UI",
         subtitle: "Demo & Anteprima",
         description: "Esplora tutti i componenti UI disponibili",
+      },
+      "crud-example": {
+        title: "Esempio CRUD",
+        subtitle: "Gestione Items",
+        description: "Esempio completo di CRUD con gestione items",
       },
     },
 
