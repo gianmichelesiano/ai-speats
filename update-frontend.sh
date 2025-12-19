@@ -16,12 +16,12 @@ if [ "$DOMAIN" = "localhost" ]; then
 fi
 
 # Ferma temporaneamente il backend per liberare memoria durante il build
-docker compose stop backend
+docker compose --env-file .env.production stop backend
 # Build del frontend (--no-cache per forzare rebuild completo)
-docker compose build --no-cache frontend
+docker compose --env-file .env.production build --no-cache frontend
 # Riavvia il frontend
-docker compose up -d --no-deps frontend
+docker compose --env-file .env.production up -d --no-deps frontend
 # Riavvia il backend
-docker compose start backend
+docker compose --env-file .env.production start backend
 echo "Frontend aggiornato!"
-docker compose ps frontend
+docker compose --env-file .env.production ps frontend
