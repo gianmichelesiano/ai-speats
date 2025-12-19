@@ -10,9 +10,9 @@ else
   source .env 2>/dev/null || true
 fi
 
-# Se DOMAIN è localhost, usa http://localhost:8002 invece di https://api.localhost
+# Se DOMAIN è localhost, usa http://localhost:8000
 if [ "$DOMAIN" = "localhost" ]; then
-  export VITE_API_URL="http://localhost:8002"
+  export VITE_API_URL="http://localhost:8000"
 fi
 
 # Ferma temporaneamente il backend per liberare memoria durante il build

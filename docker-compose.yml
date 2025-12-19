@@ -70,7 +70,7 @@ services:
     build:
       context: ./backend
     ports:
-      - "8002:8000"  # Porta 8002 per evitare conflitto con brokerai-backend (8000)
+      - "8000:8000"
     networks:
       - ai-speats-network
 
