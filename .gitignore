@@ -12,9 +12,15 @@ node_modules/
 /playwright/.cache/
 
 # Environment files (IMPORTANTE: non pushare secrets!)
+# Solo i file .example vanno nel repo come template
 .env
 .env.local
+/.env.production
 .env.*.local
+frontend/.env
+frontend/.env.local
+# frontend/.env.production è OK (contiene solo VITE_API_URL, niente secrets)
+!frontend/.env.production
 z_notes.txt
 
 # Python
