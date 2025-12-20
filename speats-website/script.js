@@ -56,6 +56,17 @@ function toggleLanguageMenu() {
     languageMenu.classList.toggle('active');
 }
 
+// Solutions dropdown menu toggle function
+function toggleSolutionsMenu() {
+    const solutionsMenu = document.getElementById('solutionsMenu');
+    solutionsMenu.classList.toggle('active');
+}
+
+function closeSolutionsMenu() {
+    const solutionsMenu = document.getElementById('solutionsMenu');
+    solutionsMenu.classList.remove('active');
+}
+
 // Close language menu when clicking outside
 document.addEventListener('click', function (event) {
     const languageMenu = document.getElementById('languageMenu');
@@ -63,6 +74,14 @@ document.addEventListener('click', function (event) {
 
     if (languageMenu && globeIcon && !globeIcon.contains(event.target) && !languageMenu.contains(event.target)) {
         languageMenu.classList.remove('active');
+    }
+
+    // Close solutions menu when clicking outside
+    const solutionsMenu = document.getElementById('solutionsMenu');
+    const solutionsDropdown = document.querySelector('.dropdown');
+
+    if (solutionsMenu && solutionsDropdown && !solutionsDropdown.contains(event.target)) {
+        solutionsMenu.classList.remove('active');
     }
 });
 
@@ -72,8 +91,9 @@ const translations = {
         // Header
         'nav_home': 'Home',
         'nav_services': 'Services',
+        'nav_solutions': 'Solutions',
         'nav_odoo_ai': 'Odoo AI',
-        'nav_brokerai': 'BrokerAI',
+        'nav_brokerai': 'Broker AI',
         'nav_about': 'About',
         'nav_contact': 'Contact',
         'get_started': 'Get Started',
@@ -82,7 +102,7 @@ const translations = {
         'hero_title': 'Custom AI Agents That Automate Your Business Operations.',
         'hero_description': 'From WhatsApp chatbots to lead automation and customer support - we create personalized AI agents that work 24/7 for your business. Join companies saving up to 50% on operational costs.',
         'explore_solutions': 'Request Free Demo',
-        'view_demo': 'View Live Demo',
+        'view_demo': 'Access Platform',
         'hero_benefit_1': 'WhatsApp & Email Automation',
         'hero_benefit_2': '24/7 Customer Support',
         'hero_benefit_3': 'Lead Generation & Qualification',
@@ -246,8 +266,9 @@ const translations = {
         // Header
         'nav_home': 'Home',
         'nav_services': 'Servizi',
+        'nav_solutions': 'Soluzioni',
         'nav_odoo_ai': 'Odoo AI',
-        'nav_brokerai': 'BrokerAI',
+        'nav_brokerai': 'Broker AI',
         'nav_about': 'Chi Siamo',
         'nav_contact': 'Contatti',
         'get_started': 'Inizia Ora',
@@ -256,7 +277,7 @@ const translations = {
         'hero_title': 'Agenti AI Personalizzati che Automatizzano il Tuo Business',
         'hero_description': 'Da chatbot WhatsApp ad automazione lead e supporto clienti - creiamo agenti AI su misura che lavorano 24/7 per la tua azienda. Unisciti alle aziende che risparmiano fino al 50% sui costi operativi.',
         'explore_solutions': 'Richiedi Demo Gratuita',
-        'view_demo': 'Guarda Demo Live',
+        'view_demo': 'Accedi alla Piattaforma',
         'hero_benefit_1': 'Automazione WhatsApp & Email',
         'hero_benefit_2': 'Supporto Clienti 24/7',
         'hero_benefit_3': 'Generazione & Qualifica Lead',
@@ -420,8 +441,9 @@ const translations = {
         // Header
         'nav_home': 'Accueil',
         'nav_services': 'Services',
+        'nav_solutions': 'Solutions',
         'nav_odoo_ai': 'Odoo IA',
-        'nav_brokerai': 'BrokerAI',
+        'nav_brokerai': 'Broker AI',
         'nav_about': 'À Propos',
         'nav_contact': 'Contact',
         'get_started': 'Commencer',
@@ -430,7 +452,7 @@ const translations = {
         'hero_title': 'Agents IA Personnalisés qui Automatisent Vos Opérations',
         'hero_description': 'Des chatbots WhatsApp à l\'automatisation des prospects et support client - nous créons des agents IA sur mesure qui travaillent 24h/24 pour votre entreprise. Rejoignez les entreprises qui économisent jusqu\'à 50% sur les coûts opérationnels.',
         'explore_solutions': 'Demander une Démo Gratuite',
-        'view_demo': 'Voir Démo en Direct',
+        'view_demo': 'Accéder à la Plateforme',
         'hero_benefit_1': 'Automatisation WhatsApp & Email',
         'hero_benefit_2': 'Support Client 24h/24',
         'hero_benefit_3': 'Génération & Qualification Prospects',
@@ -594,8 +616,9 @@ const translations = {
         // Header
         'nav_home': 'Startseite',
         'nav_services': 'Dienstleistungen',
+        'nav_solutions': 'Lösungen',
         'nav_odoo_ai': 'Odoo KI',
-        'nav_brokerai': 'BrokerAI',
+        'nav_brokerai': 'Broker AI',
         'nav_about': 'Über Uns',
         'nav_contact': 'Kontakt',
         'get_started': 'Loslegen',
@@ -604,7 +627,7 @@ const translations = {
         'hero_title': 'Personalisierte KI-Agenten, die Ihre Geschäftsprozesse Automatisieren',
         'hero_description': 'Von WhatsApp-Chatbots bis zur Lead-Automatisierung und Kundensupport - wir erstellen maßgeschneiderte KI-Agenten, die 24/7 für Ihr Unternehmen arbeiten. Schließen Sie sich Unternehmen an, die bis zu 50% der Betriebskosten sparen.',
         'explore_solutions': 'Kostenlose Demo Anfordern',
-        'view_demo': 'Live-Demo Ansehen',
+        'view_demo': 'Plattform Zugriff',
         'hero_benefit_1': 'WhatsApp & E-Mail Automatisierung',
         'hero_benefit_2': '24/7 Kundensupport',
         'hero_benefit_3': 'Lead-Generierung & Qualifizierung',
