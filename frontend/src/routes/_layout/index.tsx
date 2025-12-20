@@ -32,7 +32,11 @@ function Dashboard() {
       {/* Welcome Section */}
       <div className="mb-8">
         <h2 className="text-3xl font-bold tracking-tight">
-          {getGreeting(t)}, {currentUser?.full_name || currentUser?.email?.split("@")[0]}
+          {getGreeting(t)}, <span 
+            className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] bg-clip-text text-transparent"
+          >
+            {currentUser?.full_name || currentUser?.email?.split("@")[0]}
+          </span>
         </h2>
         <div className="mt-2 flex items-center gap-6 text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
@@ -48,7 +52,7 @@ function Dashboard() {
 
       {/* Modules Section */}
       <div>
-        <h3 className="mb-6 text-lg font-semibold">{t.myModules}</h3>
+        <h3 className="mb-6 text-lg font-semibold" style={{ fontWeight: 600 }}>{t.myModules}</h3>
         <ModuleGrid />
       </div>
     </div>

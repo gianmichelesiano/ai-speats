@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speats | Soluzioni AI & Automazione per Aziende | Svizzera</title>
-    <meta name="description" content="Speats offre soluzioni di intelligenza artificiale e automazione che riducono i costi operativi fino al 50%. Agenti intelligenti, automazione dei processi e applicazioni AI personalizzate.">
-    <meta name="keywords" content="intelligenza artificiale, AI, automazione, agenti intelligenti, soluzioni aziendali, riduzione costi, efficienza operativa, Svizzera">
+    <meta name="description"
+        content="Speats offre soluzioni di intelligenza artificiale e automazione che riducono i costi operativi fino al 50%. Agenti intelligenti, automazione dei processi e applicazioni AI personalizzate.">
+    <meta name="keywords"
+        content="intelligenza artificiale, AI, automazione, agenti intelligenti, soluzioni aziendali, riduzione costi, efficienza operativa, Svizzera">
     <meta name="author" content="Speats">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.speats.ch/">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.speats.ch/">
     <meta property="og:title" content="Speats | Soluzioni AI & Automazione per Aziende">
-    <meta property="og:description" content="Riduci i costi operativi fino al 50% con le nostre soluzioni di intelligenza artificiale e automazione. Agenti intelligenti, automazione dei processi e applicazioni AI personalizzate.">
+    <meta property="og:description"
+        content="Riduci i costi operativi fino al 50% con le nostre soluzioni di intelligenza artificiale e automazione. Agenti intelligenti, automazione dei processi e applicazioni AI personalizzate.">
     <meta property="og:image" content="https://www.speats.ch/assets/og-image.jpg">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.speats.ch/">
     <meta property="twitter:title" content="Speats | Soluzioni AI & Automazione per Aziende">
-    <meta property="twitter:description" content="Riduci i costi operativi fino al 50% con le nostre soluzioni di intelligenza artificiale e automazione. Agenti intelligenti, automazione dei processi e applicazioni AI personalizzate.">
+    <meta property="twitter:description"
+        content="Riduci i costi operativi fino al 50% con le nostre soluzioni di intelligenza artificiale e automazione. Agenti intelligenti, automazione dei processi e applicazioni AI personalizzate.">
     <meta property="twitter:image" content="https://www.speats.ch/assets/og-image.jpg">
-    
+
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <!-- Preload critical assets -->
     <link rel="preload" href="assets/optimized/hero.webp" as="image" type="image/webp">
-    
+
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles.min.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <!-- Cache control headers for static resources -->
     <meta http-equiv="Cache-Control" content="max-age=31536000, immutable">
 </head>
+
 <body itemscope itemtype="http://schema.org/Organization">
     <header>
         <div class="container">
@@ -48,22 +54,23 @@
                 </div>
                 <div class="language-globe">
                     <div class="globe-icon" onclick="toggleLanguageMenu()">
-                        <i class="fas fa-globe"></i><i class="fas fa-chevron-down" style="font-size: 0.8em; margin-left: 5px;"></i>
+                        <i class="fas fa-globe"></i><i class="fas fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i>
                     </div>
-                    <div class="language-dropdown" id="languageMenu"> 
+                    <div class="language-dropdown" id="languageMenu">
                         <div class="lang-option" onclick="changeLanguage('en')">English</div>
                         <div class="lang-option" onclick="changeLanguage('it')">Italiano</div>
                         <div class="lang-option" onclick="changeLanguage('fr')">Français</div>
                         <div class="lang-option" onclick="changeLanguage('de')">Deutsch</div>
                     </div>
                 </div>
-                
+
                 <div class="hamburger" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                
+
                 <div class="nav-wrapper">
                     <ul class="nav-links">
                         <li><a href="#home" onclick="closeMenu()" data-i18n="nav_home">Home</a></li>
@@ -73,48 +80,35 @@
                         <li><a href="#about" onclick="closeMenu()" data-i18n="nav_about">About</a></li>
                         <li><a href="#contact" onclick="closeMenu()" data-i18n="nav_contact">Contact</a></li>
                     </ul>
-                    <a href="#contact" class="btn mobile-btn" onclick="closeMenu()" data-i18n="get_started">Get Started</a>
+                    <a href="https://dashboard.speats.ch/" class="btn mobile-btn" onclick="closeMenu()"
+                        data-i18n="get_started">Get
+                        Started</a>
                 </div>
-                
-                <a href="#contact" class="btn header-btn" data-i18n="get_started">Get Started</a>
+
+                <a href="https://dashboard.speats.ch/" class="btn header-btn" data-i18n="get_started">Get Started</a>
             </nav>
         </div>
     </header>
-    
+
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 data-i18n="hero_title">Revolutionize Your Business with Intelligent AI Solutions</h1>
-                    <p data-i18n="hero_description" itemprop="description">Speats delivers cutting-edge AI applications and autonomous agents that reduce operational costs by up to 50% while driving innovation and growth. Join the 200+ businesses already thriving with our solutions.</p>
-                    
-                    <div class="hero-benefits">
-                        <div class="benefit-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span data-i18n="hero_benefit_1">WhatsApp & Email Automation</span>
-                        </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span data-i18n="hero_benefit_2">24/7 Customer Support</span>
-                        </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span data-i18n="hero_benefit_3">Lead Generation & Qualification</span>
-                        </div>
+                    <div class="hero-badge">
+                        <i class="fas fa-rocket"></i> Public Beta
                     </div>
-                    
+                    <h1 data-i18n="hero_title">Revolutionize Your Business with Intelligent AI Solutions</h1>
+                    <p data-i18n="hero_description" itemprop="description">Speats delivers cutting-edge AI applications
+                        and autonomous agents that reduce operational costs by up to 50% while driving innovation and
+                        growth. Join the 200+ businesses already thriving with our solutions.</p>
+
                     <div class="btn-group">
-                        <a href="#contact" class="btn" data-i18n="explore_solutions">Request Free Demo</a>
+                        <a href="https://dashboard.speats.ch/" class="btn" data-i18n="explore_solutions">Get Started</a>
                         <a href="#brokerai" class="btn btn-secondary" data-i18n="view_demo">View Live Demo</a>
                     </div>
 
                 </div>
-                <div class="hero-image">
-                    <picture>
-                        <source srcset="assets/optimized/hero.webp" type="image/webp">
-                        <img src="assets/21f3c765-e63c-4d92-badf-64196acd0c64.png" alt="Illustrazione di tecnologia AI avanzata per soluzioni aziendali" width="500" height="400">
-                    </picture>
-                </div>
+                <!-- Hero image removed for centralized text layout -->
             </div>
         </div>
     </section>
@@ -137,53 +131,64 @@
             </div>
         </div>
     </section>
-    
+
     <section class="section" id="services">
         <div class="container">
             <div class="section-title">
                 <h2 data-i18n="services_title">Our AI Solutions.</h2>
-                <p data-i18n="services_description">We create powerful technology that solves real business problems, enhances productivity, and delivers measurable results.</p>
+                <p data-i18n="services_description">We create powerful technology that solves real business problems,
+                    enhances productivity, and delivers measurable results.</p>
             </div>
             <div itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
-            <div class="services" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList">
-                <div class="service-card" itemprop="itemListElement" itemscope itemtype="http://schema.org/Service">
-                <div class="service-icon"><i class="fas fa-brain"></i></div>
-                    <h3 data-i18n="service_intelligent_agents_title" itemprop="name">Intelligent Agents</h3>
-                    <p data-i18n="service_intelligent_agents_description">Our autonomous AI agents can perceive your business environment, make decisions, and take actions to achieve specific goals without human intervention. They seamlessly handle complex workflows, customer interactions, and data analysis.</p>
-                    <p style="margin-top: 15px; color: var(--primary-dark); font-weight: 500;" data-i18n="service_key_benefits">Key Benefits:</p>
-                    <ul style="margin-top: 10px; color: var(--gray); padding-left: 20px;">
-                        <li data-i18n="service_key_benefit_1">24/7 operation without fatigue</li>
-                        <li data-i18n="service_key_benefit_2">Consistent performance</li>
-                        <li data-i18n="service_key_benefit_3">Scalable across departments</li>
-                        <li data-i18n="service_key_benefit_4">Self-learning capabilities</li>
-                    </ul>
-                </div>
-                <div class="service-card" itemprop="itemListElement" itemscope itemtype="http://schema.org/Service">
-                <div class="service-icon"><i class="fas fa-cogs"></i></div>
-                    <h3 data-i18n="service_process_automation_title" itemprop="name">Process Automation</h3>
-                    <p data-i18n="service_process_automation_description">Streamline workflows and eliminate repetitive tasks with our advanced automation solutions, allowing your team to focus on high-value work while reducing operational costs and improving accuracy.</p>
-                    <p style="margin-top: 15px; color: var(--primary-dark); font-weight: 500;" data-i18n="service_automation_areas">Automation Areas:</p>
-                    <ul style="margin-top: 10px; color: var(--gray); padding-left: 20px;">
-                        <li data-i18n="service_automation_area_1">Document processing & analysis</li>
-                        <li data-i18n="service_automation_area_2">Customer service operations</li>
-                        <li data-i18n="service_automation_area_3">Supply chain optimization</li>
-                        <li data-i18n="service_automation_area_4">Regulatory compliance</li>
-                    </ul>
-                </div>
-                <div class="service-card" itemprop="itemListElement" itemscope itemtype="http://schema.org/Service">
-                <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
-                    <h3 data-i18n="service_custom_ai_applications_title" itemprop="name">Custom AI Applications</h3>
-                    <p data-i18n="service_custom_ai_applications_description">We design and develop tailored AI applications that address your specific business challenges and optimize operational efficiency with solutions built specifically for your unique needs.</p>
-                    <p style="margin-top: 15px; color: var(--primary-dark); font-weight: 500;" data-i18n="service_features">Features:</p>
-                    <ul style="margin-top: 10px; color: var(--gray); padding-left: 20px;">
-                        <li data-i18n="service_feature_1">Predictive analytics</li>
-                        <li data-i18n="service_feature_2">Natural language processing</li>
-                        <li data-i18n="service_feature_3">Computer vision solutions</li>
-                        <li data-i18n="service_feature_4">Decision support systems</li>
-                    </ul>
+                <div class="services" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList">
+                    <div class="service-card" itemprop="itemListElement" itemscope itemtype="http://schema.org/Service">
+                        <div class="service-icon"><i class="fas fa-brain"></i></div>
+                        <h3 data-i18n="service_intelligent_agents_title" itemprop="name">Intelligent Agents</h3>
+                        <p data-i18n="service_intelligent_agents_description">Our autonomous AI agents can perceive your
+                            business environment, make decisions, and take actions to achieve specific goals without
+                            human intervention. They seamlessly handle complex workflows, customer interactions, and
+                            data analysis.</p>
+                        <p style="margin-top: 15px; color: var(--primary-dark); font-weight: 500;"
+                            data-i18n="service_key_benefits">Key Benefits:</p>
+                        <ul style="margin-top: 10px; color: var(--gray); padding-left: 20px;">
+                            <li data-i18n="service_key_benefit_1">24/7 operation without fatigue</li>
+                            <li data-i18n="service_key_benefit_2">Consistent performance</li>
+                            <li data-i18n="service_key_benefit_3">Scalable across departments</li>
+                            <li data-i18n="service_key_benefit_4">Self-learning capabilities</li>
+                        </ul>
+                    </div>
+                    <div class="service-card" itemprop="itemListElement" itemscope itemtype="http://schema.org/Service">
+                        <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                        <h3 data-i18n="service_process_automation_title" itemprop="name">Process Automation</h3>
+                        <p data-i18n="service_process_automation_description">Streamline workflows and eliminate
+                            repetitive tasks with our advanced automation solutions, allowing your team to focus on
+                            high-value work while reducing operational costs and improving accuracy.</p>
+                        <p style="margin-top: 15px; color: var(--primary-dark); font-weight: 500;"
+                            data-i18n="service_automation_areas">Automation Areas:</p>
+                        <ul style="margin-top: 10px; color: var(--gray); padding-left: 20px;">
+                            <li data-i18n="service_automation_area_1">Document processing & analysis</li>
+                            <li data-i18n="service_automation_area_2">Customer service operations</li>
+                            <li data-i18n="service_automation_area_3">Supply chain optimization</li>
+                            <li data-i18n="service_automation_area_4">Regulatory compliance</li>
+                        </ul>
+                    </div>
+                    <div class="service-card" itemprop="itemListElement" itemscope itemtype="http://schema.org/Service">
+                        <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h3 data-i18n="service_custom_ai_applications_title" itemprop="name">Custom AI Applications</h3>
+                        <p data-i18n="service_custom_ai_applications_description">We design and develop tailored AI
+                            applications that address your specific business challenges and optimize operational
+                            efficiency with solutions built specifically for your unique needs.</p>
+                        <p style="margin-top: 15px; color: var(--primary-dark); font-weight: 500;"
+                            data-i18n="service_features">Features:</p>
+                        <ul style="margin-top: 10px; color: var(--gray); padding-left: 20px;">
+                            <li data-i18n="service_feature_1">Predictive analytics</li>
+                            <li data-i18n="service_feature_2">Natural language processing</li>
+                            <li data-i18n="service_feature_3">Computer vision solutions</li>
+                            <li data-i18n="service_feature_4">Decision support systems</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Odoo AI Product Section -->
@@ -191,7 +196,8 @@
         <div class="container">
             <div class="section-title">
                 <h2 data-i18n="odoo_ai_title">AI Product Description Generator for Odoo</h2>
-                <p data-i18n="odoo_ai_subtitle">Transform your product catalog in minutes with professional AI-generated descriptions. Save 97% of your time!</p>
+                <p data-i18n="odoo_ai_subtitle">Transform your product catalog in minutes with professional AI-generated
+                    descriptions. Save 97% of your time!</p>
             </div>
 
             <div class="odoo-hero">
@@ -215,37 +221,43 @@
                 <div class="feature-card">
                     <div class="service-icon"><i class="fas fa-bolt"></i></div>
                     <h3 data-i18n="odoo_feature_oneclick_title">One-Click Generation</h3>
-                    <p data-i18n="odoo_feature_oneclick_description">Open any product, click "Generate with AI", and get a professional description in 3 seconds. It's that simple.</p>
+                    <p data-i18n="odoo_feature_oneclick_description">Open any product, click "Generate with AI", and get
+                        a professional description in 3 seconds. It's that simple.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="service-icon"><i class="fas fa-file-alt"></i></div>
                     <h3 data-i18n="odoo_feature_templates_title">3 Smart Templates</h3>
-                    <p data-i18n="odoo_feature_templates_description">Choose Brief (50 words), Standard (100 words), or Detailed (200 words). Perfect for any use case.</p>
+                    <p data-i18n="odoo_feature_templates_description">Choose Brief (50 words), Standard (100 words), or
+                        Detailed (200 words). Perfect for any use case.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="service-icon"><i class="fas fa-edit"></i></div>
                     <h3 data-i18n="odoo_feature_edit_title">Edit Before Saving</h3>
-                    <p data-i18n="odoo_feature_edit_description">Preview and modify the generated description before applying. Full control, zero waste.</p>
+                    <p data-i18n="odoo_feature_edit_description">Preview and modify the generated description before
+                        applying. Full control, zero waste.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="service-icon"><i class="fas fa-sync-alt"></i></div>
                     <h3 data-i18n="odoo_feature_regenerate_title">Regenerate Anytime</h3>
-                    <p data-i18n="odoo_feature_regenerate_description">Not happy? Click "Regenerate" for a fresh version. Different words, same quality.</p>
+                    <p data-i18n="odoo_feature_regenerate_description">Not happy? Click "Regenerate" for a fresh
+                        version. Different words, same quality.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="service-icon"><i class="fas fa-lock"></i></div>
                     <h3 data-i18n="odoo_feature_secure_title">Secure Configuration</h3>
-                    <p data-i18n="odoo_feature_secure_description">Your OpenAI API key is stored encrypted. Test connection with one click.</p>
+                    <p data-i18n="odoo_feature_secure_description">Your OpenAI API key is stored encrypted. Test
+                        connection with one click.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
                     <h3 data-i18n="odoo_feature_error_title">Smart Error Handling</h3>
-                    <p data-i18n="odoo_feature_error_description">Clear error messages with troubleshooting steps. Never stuck, always supported.</p>
+                    <p data-i18n="odoo_feature_error_description">Clear error messages with troubleshooting steps. Never
+                        stuck, always supported.</p>
                 </div>
             </div>
 
@@ -254,7 +266,8 @@
                 <div class="screenshot-showcase">
                     <div class="screenshot-item">
                         <h4 data-i18n="odoo_screenshot_1_title">Generate with One Click</h4>
-                        <p data-i18n="odoo_screenshot_1_description">Open any product and click "Generate AI Description". The wizard opens instantly.</p>
+                        <p data-i18n="odoo_screenshot_1_description">Open any product and click "Generate AI
+                            Description". The wizard opens instantly.</p>
                         <picture>
                             <img src="assets/main_screenshot.png" alt="AI Generation Wizard Screenshot" loading="lazy">
                         </picture>
@@ -262,17 +275,21 @@
 
                     <div class="screenshot-item">
                         <h4 data-i18n="odoo_screenshot_2_title">Smart Button in Product Form</h4>
-                        <p data-i18n="odoo_screenshot_2_description">The "Generate AI Description" button is integrated directly in your product form.</p>
+                        <p data-i18n="odoo_screenshot_2_description">The "Generate AI Description" button is integrated
+                            directly in your product form.</p>
                         <picture>
-                            <img src="assets/smart_button_screenshot.png" alt="Smart Button in Product Form Screenshot" loading="lazy">
+                            <img src="assets/smart_button_screenshot.png" alt="Smart Button in Product Form Screenshot"
+                                loading="lazy">
                         </picture>
                     </div>
 
                     <div class="screenshot-item">
                         <h4 data-i18n="odoo_screenshot_3_title">Easy Configuration</h4>
-                        <p data-i18n="odoo_screenshot_3_description">Add your OpenAI API key, test the connection, and you're ready to go!</p>
+                        <p data-i18n="odoo_screenshot_3_description">Add your OpenAI API key, test the connection, and
+                            you're ready to go!</p>
                         <picture>
-                            <img src="assets/config_screenshot.png" alt="Configuration Settings Screenshot" loading="lazy">
+                            <img src="assets/config_screenshot.png" alt="Configuration Settings Screenshot"
+                                loading="lazy">
                         </picture>
                     </div>
                 </div>
@@ -284,25 +301,29 @@
                     <div class="benefit-card">
                         <div class="benefit-icon"><i class="fas fa-clock"></i></div>
                         <h4 data-i18n="odoo_benefit_time_title">Save Hours of Work</h4>
-                        <p data-i18n="odoo_benefit_time_description">200 products = 30 minutes instead of 50 hours. Automatic comparisons and batch processing.</p>
+                        <p data-i18n="odoo_benefit_time_description">200 products = 30 minutes instead of 50 hours.
+                            Automatic comparisons and batch processing.</p>
                     </div>
 
                     <div class="benefit-card">
                         <div class="benefit-icon"><i class="fas fa-check-circle"></i></div>
                         <h4 data-i18n="odoo_benefit_quality_title">Consistent Quality</h4>
-                        <p data-i18n="odoo_benefit_quality_description">SEO-optimized descriptions with standardized format across all products.</p>
+                        <p data-i18n="odoo_benefit_quality_description">SEO-optimized descriptions with standardized
+                            format across all products.</p>
                     </div>
 
                     <div class="benefit-card">
                         <div class="benefit-icon"><i class="fas fa-dollar-sign"></i></div>
                         <h4 data-i18n="odoo_benefit_cost_title">Minimal Costs</h4>
-                        <p data-i18n="odoo_benefit_cost_description">€29 one-time + ~€0.02 per description. 100 products ≈ €2 API cost.</p>
+                        <p data-i18n="odoo_benefit_cost_description">€29 one-time + ~€0.02 per description. 100 products
+                            ≈ €2 API cost.</p>
                     </div>
 
                     <div class="benefit-card">
                         <div class="benefit-icon"><i class="fas fa-infinity"></i></div>
                         <h4 data-i18n="odoo_benefit_unlimited_title">Unlimited Use</h4>
-                        <p data-i18n="odoo_benefit_unlimited_description">Pay once, use forever. No subscriptions, no hidden fees. Lifetime updates included.</p>
+                        <p data-i18n="odoo_benefit_unlimited_description">Pay once, use forever. No subscriptions, no
+                            hidden fees. Lifetime updates included.</p>
                     </div>
                 </div>
             </div>
@@ -310,8 +331,10 @@
             <div class="odoo-cta">
                 <h3 data-i18n="odoo_cta_title">Ready to Transform Your Product Catalog?</h3>
                 <p data-i18n="odoo_cta_description">Join hundreds of Odoo users saving hours every week.</p>
-                <a href="https://apps.odoo.com" target="_blank" class="btn" data-i18n="odoo_cta_button">Get It Now on Odoo Apps</a>
-                <p style="margin-top: 20px; font-size: 0.9em; color: var(--gray);" data-i18n="odoo_cta_guarantee">30-day money-back guarantee • Compatible: Odoo 17, 18, 19</p>
+                <a href="https://apps.odoo.com" target="_blank" class="btn" data-i18n="odoo_cta_button">Get It Now on
+                    Odoo Apps</a>
+                <p style="margin-top: 20px; font-size: 0.9em; color: var(--gray);" data-i18n="odoo_cta_guarantee">30-day
+                    money-back guarantee • Compatible: Odoo 17, 18, 19</p>
             </div>
         </div>
     </section>
@@ -321,39 +344,48 @@
         <div class="container">
             <div class="section-title">
                 <h2 data-i18n="brokerai_title">BrokerAI - Rivoluziona la Gestione delle Polizze Assicurative</h2>
-                <p data-i18n="brokerai_description">Una piattaforma all'avanguardia che combina intelligenza artificiale avanzata con un'interfaccia intuitiva per trasformare il modo in cui i broker analizzano, confrontano e gestiscono le polizze assicurative.</p>
+                <p data-i18n="brokerai_description">Una piattaforma all'avanguardia che combina intelligenza artificiale
+                    avanzata con un'interfaccia intuitiva per trasformare il modo in cui i broker analizzano,
+                    confrontano e gestiscono le polizze assicurative.</p>
                 <div class="brokerai-cta">
-                    <a href="https://dashboard.speats.ch/" target="_blank" class="btn" data-i18n="brokerai_access">Accedi a BrokerAI</a>
+                    <a href="https://dashboard.speats.ch/" target="_blank" class="btn"
+                        data-i18n="brokerai_access">Accedi a BrokerAI</a>
                 </div>
             </div>
-            
+
             <div class="brokerai-features">
                 <div class="feature-card">
                     <div class="service-icon"><i class="fas fa-robot"></i></div>
                     <h3 data-i18n="brokerai_feature_ai_title">Analisi AI Avanzata</h3>
-                    <p data-i18n="brokerai_feature_ai_description">Estrazione automatica del contenuto da documenti PDF delle polizze con analisi intelligente delle garanzie tramite modelli AI avanzati. Identificazione precisa di clausole, massimali e franchigie.</p>
+                    <p data-i18n="brokerai_feature_ai_description">Estrazione automatica del contenuto da documenti PDF
+                        delle polizze con analisi intelligente delle garanzie tramite modelli AI avanzati.
+                        Identificazione precisa di clausole, massimali e franchigie.</p>
                     <ul>
                         <li data-i18n="brokerai_feature_ai_1">Elaborazione in batch per multiple garanzie</li>
                         <li data-i18n="brokerai_feature_ai_2">Confidence scoring per affidabilità</li>
                         <li data-i18n="brokerai_feature_ai_3">Identificazione automatica clausole</li>
                     </ul>
                 </div>
-                
+
                 <div class="feature-card">
                     <div class="service-icon"><i class="fas fa-balance-scale"></i></div>
                     <h3 data-i18n="brokerai_feature_compare_title">Confronto Intelligente</h3>
-                    <p data-i18n="brokerai_feature_compare_description">Confronto automatico delle garanzie tra diverse compagnie assicurative con analisi comparativa dettagliata ed evidenziazione delle differenze principali.</p>
+                    <p data-i18n="brokerai_feature_compare_description">Confronto automatico delle garanzie tra diverse
+                        compagnie assicurative con analisi comparativa dettagliata ed evidenziazione delle differenze
+                        principali.</p>
                     <ul>
                         <li data-i18n="brokerai_feature_compare_1">Confronto multi-compagnia automatico</li>
                         <li data-i18n="brokerai_feature_compare_2">Salvataggio confronti per consultazioni future</li>
                         <li data-i18n="brokerai_feature_compare_3">Storico completo delle analisi</li>
                     </ul>
                 </div>
-                
+
                 <div class="feature-card">
                     <div class="service-icon"><i class="fas fa-chart-line"></i></div>
                     <h3 data-i18n="brokerai_feature_management_title">Gestione Strutturata</h3>
-                    <p data-i18n="brokerai_feature_management_description">Dashboard professionale con database organizzato per compagnie e tipologie assicurative, mapping intelligente e ricerca full-text avanzata nei contenuti.</p>
+                    <p data-i18n="brokerai_feature_management_description">Dashboard professionale con database
+                        organizzato per compagnie e tipologie assicurative, mapping intelligente e ricerca full-text
+                        avanzata nei contenuti.</p>
                     <ul>
                         <li data-i18n="brokerai_feature_management_1">Dashboard con statistiche in tempo reale</li>
                         <li data-i18n="brokerai_feature_management_2">Workflow guidato step-by-step</li>
@@ -361,86 +393,97 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="brokerai-benefits">
                 <h3 data-i18n="brokerai_benefits_title">Vantaggi per i Professionisti</h3>
                 <div class="benefits-grid">
                     <div class="benefit-card">
                         <div class="benefit-icon"><i class="fas fa-clock"></i></div>
                         <h4 data-i18n="brokerai_benefit_time_title">Risparmio di Tempo</h4>
-                        <p data-i18n="brokerai_benefit_time_description">Riduci da ore a minuti il tempo necessario per analizzare una polizza con confronti automatici e batch processing.</p>
+                        <p data-i18n="brokerai_benefit_time_description">Riduci da ore a minuti il tempo necessario per
+                            analizzare una polizza con confronti automatici e batch processing.</p>
                     </div>
-                    
+
                     <div class="benefit-card">
                         <div class="benefit-icon"><i class="fas fa-bullseye"></i></div>
                         <h4 data-i18n="brokerai_benefit_precision_title">Precisione Aumentata</h4>
-                        <p data-i18n="brokerai_benefit_precision_description">Elimina errori umani nell'interpretazione delle clausole con analisi standardizzata e consistente.</p>
+                        <p data-i18n="brokerai_benefit_precision_description">Elimina errori umani nell'interpretazione
+                            delle clausole con analisi standardizzata e consistente.</p>
                     </div>
-                    
+
                     <div class="benefit-card">
                         <div class="benefit-icon"><i class="fas fa-chart-bar"></i></div>
                         <h4 data-i18n="brokerai_benefit_productivity_title">Produttività Migliorata</h4>
-                        <p data-i18n="brokerai_benefit_productivity_description">Dashboard centralizzata con storico delle analisi sempre accessibile e workflow ottimizzati.</p>
+                        <p data-i18n="brokerai_benefit_productivity_description">Dashboard centralizzata con storico
+                            delle analisi sempre accessibile e workflow ottimizzati.</p>
                     </div>
-                    
+
                     <div class="benefit-card">
                         <div class="benefit-icon"><i class="fas fa-handshake"></i></div>
                         <h4 data-i18n="brokerai_benefit_service_title">Servizio Clienti Superiore</h4>
-                        <p data-i18n="brokerai_benefit_service_description">Confronti dettagliati da presentare ai clienti con analisi professionali e risposte rapide.</p>
+                        <p data-i18n="brokerai_benefit_service_description">Confronti dettagliati da presentare ai
+                            clienti con analisi professionali e risposte rapide.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section class="section process" id="about">
         <div class="container">
             <div class="section-title">
                 <h2 data-i18n="approach_title">Our Approach</h2>
-                <p data-i18n="approach_description">We follow a structured approach to understand your needs and deliver solutions that exceed expectations.</p>
+                <p data-i18n="approach_description">We follow a structured approach to understand your needs and deliver
+                    solutions that exceed expectations.</p>
             </div>
             <div class="process-steps">
                 <div class="step">
                     <div class="step-number">1</div>
                     <h3 data-i18n="process_step_1_title">Discovery</h3>
-                    <p data-i18n="process_step_1_description">We analyze your challenges and identify opportunities for AI and automation.</p>
+                    <p data-i18n="process_step_1_description">We analyze your challenges and identify opportunities for
+                        AI and automation.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
                     <h3 data-i18n="process_step_2_title">Design</h3>
-                    <p data-i18n="process_step_2_description">We architect tailored solutions with cutting-edge AI technology.</p>
+                    <p data-i18n="process_step_2_description">We architect tailored solutions with cutting-edge AI
+                        technology.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
                     <h3 data-i18n="process_step_3_title">Development</h3>
-                    <p data-i18n="process_step_3_description">Our experts build and refine your solution using agile methodologies.</p>
+                    <p data-i18n="process_step_3_description">Our experts build and refine your solution using agile
+                        methodologies.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
                     <h3 data-i18n="process_step_4_title">Deployment</h3>
-                    <p data-i18n="process_step_4_description">We implement, test, and optimize for maximum impact and ROI.</p>
+                    <p data-i18n="process_step_4_description">We implement, test, and optimize for maximum impact and
+                        ROI.</p>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section class="cta">
         <div class="container">
             <h2 data-i18n="cta_title">Ready to Transform Your Business?</h2>
-            <p data-i18n="cta_description">Let's discuss how our AI solutions can help you achieve your goals and stay ahead of the competition.</p>
+            <p data-i18n="cta_description">Let's discuss how our AI solutions can help you achieve your goals and stay
+                ahead of the competition.</p>
             <div class="btn-group">
                 <a href="tel:+41794508927" class="btn" data-i18n="cta_call_us">Call +41 79 450 89 27</a>
                 <a href="mailto:info@speats.ch" class="btn btn-secondary" data-i18n="cta_send_mail">Send Mail</a>
             </div>
         </div>
     </section>
-    
+
     <footer id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
                     <h3>Speats</h3>
-                    <p data-i18n="footer_description">Leveraging cutting-edge AI technology, we empower businesses to streamline operations, drive innovation, and deliver exceptional customer experiences.</p>
+                    <p data-i18n="footer_description">Leveraging cutting-edge AI technology, we empower businesses to
+                        streamline operations, drive innovation, and deliver exceptional customer experiences.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -469,13 +512,16 @@
                 <div class="footer-links">
                     <h4 data-i18n="footer_contact_us">Contact Us</h4>
                     <div class="contact-info" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <i class="fas fa-map-marker-alt"></i> <span itemprop="streetAddress">Brandstrasse 21, Schlieren, Switzerland</span>, 
+                        <i class="fas fa-map-marker-alt"></i> <span itemprop="streetAddress">Brandstrasse 21, Schlieren,
+                            Switzerland</span>,
                     </div>
                     <div class="contact-info">
-                        <i class="fas fa-phone"></i> <a href="tel:+41794508927" itemprop="telephone">+41 79 450 89 27</a>
+                        <i class="fas fa-phone"></i> <a href="tel:+41794508927" itemprop="telephone">+41 79 450 89
+                            27</a>
                     </div>
                     <div class="contact-info">
-                        <i class="fas fa-envelope"></i> <a href="mailto:info@speats.ch" itemprop="email">info@speats.ch</a>
+                        <i class="fas fa-envelope"></i> <a href="mailto:info@speats.ch"
+                            itemprop="email">info@speats.ch</a>
                     </div>
                 </div>
             </div>
@@ -523,7 +569,7 @@
       "priceRange": "$$"
     }
     </script>
-    
+
     <!-- Structured data for FAQ -->
     <script type="application/ld+json">
     {
@@ -553,8 +599,9 @@
       }]
     }
     </script>
-    
+
     <!-- Compressed and minified JavaScript -->
     <script src="script.js" defer></script>
 </body>
+
 </html>
